@@ -82,7 +82,6 @@ Some of the tools I currently work with or am actively building around:
 - Plex
 - GitHub
 - Windows Server / Active Directory
-- Security+ / CySA+ / Network+ knowledge areas
 
 ## Current Direction
 
