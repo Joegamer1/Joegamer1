@@ -4,11 +4,11 @@ I'm a SOC Analyst with a background in cybersecurity, networking, endpoint suppo
 
 Right now, most of my personal technical work is centered around a growing homelab and household operations platform. The goal is not just to spin up random services, but to build something organized, documented, secure, and useful.
 
-## What I'm Working On
+## Featured Project
 
-### Homelab Infrastructure Portfolio
+### [Homelab Infrastructure Portfolio](https://github.com/Joegamer1/homelab-infrastructure-portfolio)
 
-I'm documenting my actual homelab as a professional infrastructure portfolio. This includes the design decisions, service layout, access model, monitoring, backups, and operational lessons learned along the way.
+This is the main portfolio project I am building around my actual homelab. It documents the design decisions, service layout, access model, monitoring, backups, security posture, and operational lessons learned along the way.
 
 Current focus areas:
 
@@ -21,8 +21,11 @@ Current focus areas:
 - Homepage as a homelab launchpad
 - Plex and media automation services
 - Backup planning and service recovery documentation
+- Security hardening roadmap
 
 This project is meant to show how I think through infrastructure, not just that I can follow install guides.
+
+## What I'm Working On
 
 ### Home Assistant / Household Automation
 
@@ -47,6 +50,10 @@ The early goal is simple: typed local access that can answer useful household qu
 > What does tomorrow look like?
 
 Long term, the idea is to connect voice input, calendar data, Home Assistant state, and AI reasoning into something more useful than a basic smart speaker.
+
+### Future Cybersecurity Lab
+
+I plan to keep cybersecurity-specific lab work separate from the household infrastructure documentation. Future work may include SIEM deployment, detection engineering, log analysis, attack simulation, and incident writeups built on top of the homelab foundation.
 
 ## Technical Areas I Care About
 
@@ -89,14 +96,6 @@ My main goal is to turn my homelab into a clear, professional portfolio that dem
 - The ability to build systems that people actually use
 
 I care less about making a lab look flashy and more about making it explainable, maintainable, and useful.
-
-## Featured Projects Coming Soon
-
-- `homelab-infrastructure-portfolio` — documentation for my actual homelab infrastructure
-- Home Assistant household operations project
-- Donetick chore automation documentation
-- Hermes / House Brain AI assistant project
-- Future cybersecurity lab projects built on top of the homelab
 
 ---
 
