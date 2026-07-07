@@ -92,10 +92,8 @@ My main goal is to turn my homelab into a clear, professional portfolio that dem
 - Security-minded design
 - Documentation discipline
 - Automation thinking
-- The ability to build systems that people actually use
+- The ability to build systems that my family will actually use
 
 I care less about making a lab look flashy and more about making it explainable, maintainable, and useful.
 
 ---
-
-Building things, breaking things, documenting the fix, and trying not to turn my house into a production outage.
