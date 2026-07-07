@@ -1,6 +1,6 @@
 # Hey, I'm Joe
 
-I'm a SOC Analyst with a background in cybersecurity, networking, endpoint support, and hands-on infrastructure. I like building practical systems that solve real problems — especially when they make daily life easier, safer, or more automated.
+I'm a SOC Analyst with a background in cybersecurity, networking, endpoint support, and hands-on infrastructure. I like building practical systems that solve my own day-to-day problems — especially when they make my daily life easier to keep track of.
 
 Right now, most of my personal technical work is centered around a growing homelab and household operations platform. The goal is not just to spin up random services, but to build something organized, documented, secure, and useful.
 
