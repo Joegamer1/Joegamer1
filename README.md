@@ -1,99 +1,119 @@
 # Hey, I'm Joe
 
-I'm a SOC Analyst with a background in cybersecurity, networking, endpoint support, and hands-on infrastructure. I like building practical systems that solve my own day-to-day problems — especially when they make my daily life easier to keep track of.
+I'm a SOC Analyst with a background in cybersecurity, networking, endpoint support, and hands-on infrastructure.
 
-Right now, most of my personal technical work is centered around a growing homelab and household operations platform. The goal is not just to spin up random services, but to build something organized, documented, secure, and useful.
+My personal technical work is centered around a homelab that has grown into a household infrastructure and operations platform. I use it to run real services, support family workflows, test architectural decisions, and practice the kind of troubleshooting that only appears after a system is used over time.
+
+I care less about collecting tools and more about understanding how systems behave across virtualization, Linux, containers, networking, applications, and the people using them.
 
 ## Featured Project
 
 ### [Homelab Infrastructure Portfolio](https://github.com/Joegamer1/homelab-infrastructure-portfolio)
 
-This is the main portfolio project I am building around my actual homelab. It documents the design decisions, service layout, access model, monitoring, backups, security posture, and operational lessons learned along the way.
+This repository documents my actual homelab: what I built, why the architecture changed, what failed along the way, how I isolated problems, and how I validated the resulting fixes.
 
-Current focus areas:
+The environment is built around:
 
-- Proxmox virtualization
-- Debian-based Docker services
-- Home Assistant as a household operations platform
-- Tailscale for private remote access
-- Uptime Kuma for service monitoring
-- Pi-hole for local DNS and network filtering
-- Homepage as a homelab launchpad
-- Plex and media automation services
-- Backup planning and service recovery documentation
-- Security hardening roadmap
+- Dell Precision T7820 hardware
+- Proxmox VE virtualization
+- A Debian Docker service host
+- A dedicated Home Assistant OS VM
+- Tailscale private remote access
+- Pi-hole internal DNS
+- Uptime Kuma monitoring
+- Homepage service navigation
+- Plex and automated media services
+- Donetick-backed household chore workflows
+- Google Calendar and work-schedule visibility
+- Configuration-focused backup planning
 
-This project is meant to show how I think through infrastructure, not just that I can follow install guides.
+## What Makes the Project Different
 
-## What I'm Working On
+The project began as a traditional homelab and media-server build. It gradually became infrastructure that my household actually uses.
 
-### Home Assistant / Household Automation
+That changed the engineering priorities.
 
-Home Assistant is becoming its own major project area in my homelab. I use it as the foundation for family scheduling, dashboarding, chores, reminders, and eventually smarter household automation.
+A technically correct calendar event still needed redesign when an overnight shift confused the person reading it. A visible chore integration still needed an API bridge when it could not create the recurring, assigned tasks the household needed. A functional dashboard still needed refinement when default controls were too large or exposed the wrong workflow.
 
-Some of the current and planned work includes:
+The portfolio documents those iterations instead of showing only the polished result.
 
-- Family dashboard design
-- Google Calendar integration
-- Work schedule tracking
-- Chore management with Donetick
-- Household status views
-- Local-first automation design
-- Future AI-assisted household workflows
+## Selected Engineering Work
 
-### Hermes / House Brain Project
+### Proxmox and Docker Infrastructure
 
-I'm also experimenting with a "House Brain" concept: a local-first AI assistant layer that can interpret natural language and interact with Home Assistant.
+- Rebuilt and updated the Proxmox virtualization host.
+- Created a lightweight Debian VM as the primary Docker platform.
+- Troubleshot QEMU Guest Agent communication and VM configuration.
+- Deployed and operated infrastructure, monitoring, DNS, dashboard, media, and household services.
+- Inspected live bind mounts and named volumes instead of assuming tutorial paths matched the running environment.
 
-The early goal is simple: typed local access that can answer useful household questions like:
+### Plex Hardware Transcoding
 
-> What does tomorrow look like?
+- Enabled Intel IOMMU on Proxmox.
+- Identified and bound NVIDIA GPU functions to `vfio-pci`.
+- Passed a Quadro P620 through to the Debian VM.
+- Configured NVIDIA access inside the Plex container.
+- Preserved the working runtime and library configuration through Docker Compose.
+- Diagnosed Direct Play, Direct Stream, video transcoding, and audio-only transcoding separately.
 
-Long term, the idea is to connect voice input, calendar data, Home Assistant state, and AI reasoning into something more useful than a basic smart speaker.
+### Home Assistant Household Operations
 
-### Future Cybersecurity Lab
+- Built a family-facing dashboard rather than exposing a default administration layout.
+- Integrated Google Calendar for shared schedule visibility.
+- Created detailed and simplified calendar entities for overnight work shifts.
+- Built Donetick-backed daily and weekly recurring chore creation through Home Assistant.
+- Added assignment, helper reset, completion feedback, and targeted Card Mod styling.
+- Refined the interface based on actual household feedback.
 
-I plan to keep cybersecurity-specific lab work separate from the household infrastructure documentation. Future work may include SIEM deployment, detection engineering, log analysis, attack simulation, and incident writeups built on top of the homelab foundation.
+### Operations and Recovery
 
-## Technical Areas I Care About
+- Created configuration-focused backup archives for important Docker services.
+- Inventoried real storage locations across bind mounts and named volumes.
+- Added Docker metadata, logging, timestamps, and retention.
+- Kept restore testing explicitly marked as incomplete until it is actually performed.
+
+## How I Approach Problems
+
+My normal troubleshooting pattern is:
+
+1. Verify the actual running state.
+2. Identify which layer owns the failure.
+3. Inspect live configuration, mounts, entities, playback details, or network paths.
+4. Change one meaningful variable at a time.
+5. Validate the result through the layer closest to the original problem.
+6. Preserve the working configuration.
+7. Document what remains uncertain or incomplete.
+
+I am especially interested in problems where the first technically valid answer is not the best operational answer.
+
+## Technical Areas
 
 - Security operations
-- Homelab infrastructure
+- Proxmox virtualization
 - Linux administration
-- Docker and self-hosted services
-- Network design and private remote access
-- Monitoring and alerting
-- Automation
-- Practical documentation
-- Defensive security workflows
-
-## Tools and Technologies
-
-Some of the tools I currently work with or am actively building around:
-
-- Proxmox
-- Debian Linux
-- Docker / Docker Compose
+- Docker and Docker Compose
 - Home Assistant
-- Tailscale
-- Pi-hole
-- Uptime Kuma
-- Homepage
-- Plex
-- GitHub
-- Windows Server / Active Directory
+- REST API integration
+- Private remote access
+- DNS and service networking
+- Monitoring and operational visibility
+- GPU passthrough and media delivery
+- Backup and recovery planning
+- User-focused automation
+- Defensive security workflows
 
 ## Current Direction
 
-My main goal is to turn my homelab into a clear, professional portfolio that demonstrates:
+My main goal is to keep developing the homelab into a clear professional portfolio that demonstrates:
 
 - Real infrastructure ownership
-- Practical troubleshooting
-- Security-minded design
+- Cross-layer troubleshooting
+- Security-minded architecture
+- Operational judgment
+- Honest validation and limitations
 - Documentation discipline
-- Automation thinking
-- The ability to build systems that my family will actually use
+- The ability to build systems that other people can use successfully
 
-I care less about making a lab look flashy and more about making it explainable, maintainable, and useful.
+Cybersecurity-specific labs such as SIEM deployment, detection engineering, attack simulation, and incident writeups will remain separate projects built on top of this infrastructure foundation.
 
 ---
