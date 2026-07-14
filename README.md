@@ -1,4 +1,4 @@
-# Joe Belcher
+# Hey, I'm Joe
 
 SOC Analyst focused on security operations, infrastructure, and practical troubleshooting across Windows, Linux, networking, virtualization, and containerized services.
 
