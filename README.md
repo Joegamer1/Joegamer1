@@ -21,7 +21,7 @@ A documented Proxmox and Docker environment that includes:
 
 The repository focuses on architecture decisions, troubleshooting, validation, sanitized configuration examples, and known limitations rather than presenting a generic installation guide.
 
-## Selected Strengths
+## Technical Focus
 
 - Security operations and defensive troubleshooting
 - Linux and Windows administration
