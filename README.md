@@ -1,6 +1,6 @@
 # Hi, I'm Joe
 
-SOC Analyst focused on security operations, infrastructure, and practical troubleshooting across Windows, Linux, networking, virtualization, and containerized services.
+SOC Analyst focused on security operations, infrastructure, and practical troubleshooting across Windows, Linux, and MacOS as well as networking, virtualization, and containerized services.
 
 I build and operate a personal homelab that supports real household services. My work emphasizes reliable systems, clear security boundaries, honest validation, and documentation that explains both the final design and the failures that shaped it.
 
