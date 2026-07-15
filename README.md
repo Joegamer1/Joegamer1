@@ -1,4 +1,4 @@
-# Hey, I'm Joe
+# Hi, I'm Joe
 
 SOC Analyst focused on security operations, infrastructure, and practical troubleshooting across Windows, Linux, networking, virtualization, and containerized services.
 
@@ -24,7 +24,7 @@ The repository focuses on architecture decisions, troubleshooting, validation, s
 ## Technical Focus
 
 - Security operations and defensive troubleshooting
-- Linux and Windows administration
+- Linux, Windows, MacOS administration
 - Proxmox, Docker, and Docker Compose
 - Networking, DNS, and private remote access
 - Home Assistant and REST API integration
