@@ -36,10 +36,10 @@ The repository focuses on architecture decisions, troubleshooting, validation, s
 - CompTIA Security+
 - CompTIA CySA+
 - CompTIA Network+
-- CompTIA SecurityX — in progress
+- CompTIA SecurityX, in progress
 
 ## Current Direction
 
 I am continuing to develop projects that demonstrate infrastructure ownership, security-minded architecture, detection and response skills, and the ability to build systems that remain useful after the first successful deployment.
 
-Cybersecurity lab work—such as SIEM engineering, detection development, attack simulation, and incident analysis—will remain separate from the infrastructure portfolio while using the homelab as its foundation.
+Cybersecurity lab work, including SIEM engineering, detection development, attack simulation, and incident analysis, will remain separate from the infrastructure portfolio while using the homelab as its foundation.
