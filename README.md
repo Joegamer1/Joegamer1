@@ -36,7 +36,7 @@ The repository focuses on architecture decisions, troubleshooting, validation, s
 - CompTIA Security+
 - CompTIA CySA+
 - CompTIA Network+
-- CompTIA SecurityX, in progress
+- CompTIA SecurityX
 
 ## Current Direction
 
